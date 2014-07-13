@@ -1,5 +1,16 @@
 Revision history for Perl extension Validate::SPF.
 
+0.002   Sun Jul 13 18:16:01 2014 +0000
+
+    [ FEATURES ]
+    - replace spf regex matching with LALR parsing
+
+    [ TESTS ]
+    - added tests for mechanisms
+
+    [ DOCUMENTATION ]
+    - basic documentation added
+
 0.001   Sat May 17 16:54:03 2014 +0000
 
     - initial release

@@ -31,11 +31,18 @@ no_index:
   package:
     - DB
 provides:
+  Parse::Yapp::Driver:
+    file: lib/Validate/SPF/Parser.pm
+    version: '0.002'
   Validate::SPF:
     file: lib/Validate/SPF.pm
-    version: '0.001'
+    version: '0.002'
+  Validate::SPF::Parser:
+    file: lib/Validate/SPF/Parser.pm
+    version: '0.002'
 requires:
   Exporter: '0'
+  Regexp::Common: '0'
   perl: '5.008009'
   strict: '0'
   warnings: '0'
@@ -43,5 +50,5 @@ resources:
   bugtracker: https://github.com/Wu-Wu/Validate-SPF/issues
   homepage: https://metacpan.org/release/Validate-SPF
   repository: git://github.com/Wu-Wu/Validate-SPF.git
-version: '0.001'
+version: '0.002'
 x_authority: cpan:CHIM

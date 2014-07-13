@@ -1,0 +1,26 @@
+# This is the Pegex grammar for SPFv1
+
+%grammar spf
+%version 1
+
+spf_string:
+    spf_version
+    <BLANK>+
+    (
+        spf_mechanism* |
+        spf_modifier*
+    )
+
+spf_version: / v <EQUAL> spf1 /
+
+spf_mechanism:
+    qualifier*
+    mechanism_token
+
+qualifier: /
+    <PLUS> <DASH> <TILDE> <QMARK>
+/
+
+mechanism_token: /
+    all | ip4 | ip6 | a | mx | ptr | exists | include
+/

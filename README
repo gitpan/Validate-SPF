@@ -2,7 +2,7 @@ NAME
     Validate::SPF - Validates SPF text string
 
 VERSION
-    version 0.001
+    version 0.002
 
 SYNOPSIS
         use Validate::SPF qw( validate );
@@ -17,43 +17,88 @@ DESCRIPTION
 
     This is ALPHA quality software. The API may change without notification!
 
-EXPORTS
-    TODO
-
 FUNCTIONS
   validate
     Parse and validate SPF string..
 
+EXPORTS
+    Module does not export any symbols by default.
+
   check_extra
-    Checks extra parameters for mechanisms and modifiers.
+    Checks extra parameters of the tokens (mechanisms, modifiers). Uses the
+    appropriate private function to validate it. Returns the result of
+    calling this function, or 0 if no function found.
 
 PRIVATE FUNCTIONS
   _validate_a
     Additional checks for A mechanism.
 
+    The A records can be passed as
+
+        a
+        a/<prefix-length>
+        a:<domain-name>
+        a:<domain-name>/<prefix-length>
+
+    If no *domain-name* given, the current domain is used.
+
   _validate_mx
     Additional checks for MX mechanism.
+
+    The MX records can be passed as
+
+        mx
+        mx/<prefix-length>
+        mx:<domain-name>
+        mx:<domain-name>/<prefix-length>
+
+    If no *domain-name* given, the current domain is used.
 
   _validate_ip4
     Additional checks for IP4 mechanism.
 
+    IPv4 addresses can be passed as
+
+        ip4:<IPv4-address>
+        ip4:<IPv4-network>/<prefix-length>
+
+    If no *prefix-length* given, the /32 is assumed.
+
   _validate_ip6
     Additional checks for IP6 mechanism.
+
+    IPv6 addresses can be passed as
+
+        ip6:<IPv6-address>
+        ip6:<IPv6-network>/<prefix-length>
+
+    If no *prefix-length* given, the /128 is assumed.
 
   _validate_ptr
     Additional checks for PTR mechanism.
 
+        ptr
+        ptr:<domain>
+
   _validate_exists
     Additional checks for EXISTS mechanism.
+
+        exists:<domain>
 
   _validate_include
     Additional checks for INCLUDE mechanism.
 
+        include:<domain>
+
   _validate_redirect
     Additional checks for REDIRECT modifier.
 
+        redirect=<domain>
+
   _validate_exp
     Additional checks for EXP modifier.
+
+        exp=<domain>
 
 SEE ALSO
     RFC 7208 <http://tools.ietf.org/html/rfc7208>

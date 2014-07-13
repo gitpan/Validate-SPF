@@ -22,6 +22,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Validate::SPF",
   "PREREQ_PM" => {
     "Exporter" => 0,
+    "Regexp::Common" => 0,
     "strict" => 0,
     "warnings" => 0
   },
@@ -34,7 +35,7 @@ my %WriteMakefileArgs = (
     "Test::Pod" => "0.98",
     "Test::Spec" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -47,6 +48,7 @@ my %FallbackPrereqs = (
   "File::Temp" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
+  "Regexp::Common" => 0,
   "Test::More" => 0,
   "Test::Pod" => "0.98",
   "Test::Spec" => 0,

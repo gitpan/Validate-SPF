@@ -48,6 +48,7 @@
       "runtime" : {
          "requires" : {
             "Exporter" : "0",
+            "Regexp::Common" : "0",
             "perl" : "5.008009",
             "strict" : "0",
             "warnings" : "0"
@@ -66,9 +67,17 @@
       }
    },
    "provides" : {
+      "Parse::Yapp::Driver" : {
+         "file" : "lib/Validate/SPF/Parser.pm",
+         "version" : "0.002"
+      },
       "Validate::SPF" : {
          "file" : "lib/Validate/SPF.pm",
-         "version" : "0.001"
+         "version" : "0.002"
+      },
+      "Validate::SPF::Parser" : {
+         "file" : "lib/Validate/SPF/Parser.pm",
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -83,7 +92,7 @@
          "web" : "https://github.com/Wu-Wu/Validate-SPF"
       }
    },
-   "version" : "0.001",
+   "version" : "0.002",
    "x_authority" : "cpan:CHIM"
 }
 
