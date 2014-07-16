@@ -7,7 +7,7 @@ use warnings;
 use Exporter 'import';
 use Validate::SPF::Parser;
 
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
 our $AUTHORITY = 'cpan:CHIM'; # AUTHORITY
 
 our @EXPORT = ();
@@ -161,7 +161,7 @@ Validate::SPF - Validates SPF text string
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

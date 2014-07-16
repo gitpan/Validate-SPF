@@ -13,7 +13,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: '6.30'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.016, CPAN::Meta::Converter version 2.141170'
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,26 +29,24 @@ no_index:
   namespace:
     - t::lib
   package:
+    - Parse::Yapp::Driver
     - DB
 provides:
-  Parse::Yapp::Driver:
-    file: lib/Validate/SPF/Parser.pm
-    version: '0.002'
   Validate::SPF:
     file: lib/Validate/SPF.pm
-    version: '0.002'
+    version: '0.003'
   Validate::SPF::Parser:
     file: lib/Validate/SPF/Parser.pm
-    version: '0.002'
+    version: '0.003'
 requires:
   Exporter: '0'
-  Regexp::Common: '0'
-  perl: '5.008009'
+  Regexp::Common: '2013031301'
+  perl: '5.010001'
   strict: '0'
   warnings: '0'
 resources:
   bugtracker: https://github.com/Wu-Wu/Validate-SPF/issues
   homepage: https://metacpan.org/release/Validate-SPF
-  repository: git://github.com/Wu-Wu/Validate-SPF.git
-version: '0.002'
+  repository: https://github.com/Wu-Wu/Validate-SPF.git
+version: '0.003'
 x_authority: cpan:CHIM
