@@ -4,13 +4,13 @@
       "Anton Gerasimov <chim@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170",
+   "generated_by" : "Dist::Zilla version 5.030, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Validate-SPF",
    "no_index" : {
@@ -32,7 +32,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.30"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "develop" : {
@@ -63,18 +63,19 @@
             "IPC::Open3" : "0",
             "Test::More" : "0",
             "Test::Pod" : "0.98",
-            "Test::Spec" : "0"
+            "Test::Spec" : "0",
+            "YAML" : "0"
          }
       }
    },
    "provides" : {
       "Validate::SPF" : {
          "file" : "lib/Validate/SPF.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       },
       "Validate::SPF::Parser" : {
          "file" : "lib/Validate/SPF/Parser.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       }
    },
    "release_status" : "stable",
@@ -89,7 +90,7 @@
          "web" : "https://github.com/Wu-Wu/Validate-SPF"
       }
    },
-   "version" : "0.003",
+   "version" : "0.004",
    "x_authority" : "cpan:CHIM"
 }
 

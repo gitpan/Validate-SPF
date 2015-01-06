@@ -15,7 +15,7 @@ package Validate::SPF::Parser;
 use strict;
 use warnings;
 
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 our $AUTHORITY = 'cpan:CHIM'; # AUTHORITY
 
 use vars qw ( @ISA );
@@ -1139,7 +1139,7 @@ Validate::SPF::Parser - SPF v1 parser implementation
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -1313,7 +1313,28 @@ Ensure the C<lib/Validate/SPF/Parser.pm> saved without tab symbols and has unix 
 
 =head1 SEE ALSO
 
+Please see those modules/websites for more information related to this module.
+
+=over 4
+
+=item *
+
+L<Validate::SPF|Validate::SPF>
+
+=item *
+
 L<Parse::Yapp>
+
+=back
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/Wu-Wu/Validate-SPF/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 AUTHOR
 

@@ -10,10 +10,11 @@ build_requires:
   Test::More: '0'
   Test::Pod: '0.98'
   Test::Spec: '0'
+  YAML: '0'
 configure_requires:
-  ExtUtils::MakeMaker: '6.30'
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170'
+generated_by: 'Dist::Zilla version 5.030, CPAN::Meta::Converter version 2.143240'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -34,10 +35,10 @@ no_index:
 provides:
   Validate::SPF:
     file: lib/Validate/SPF.pm
-    version: '0.003'
+    version: '0.004'
   Validate::SPF::Parser:
     file: lib/Validate/SPF/Parser.pm
-    version: '0.003'
+    version: '0.004'
 requires:
   Exporter: '0'
   Regexp::Common: '2013031301'
@@ -48,5 +49,5 @@ resources:
   bugtracker: https://github.com/Wu-Wu/Validate-SPF/issues
   homepage: https://metacpan.org/release/Validate-SPF
   repository: https://github.com/Wu-Wu/Validate-SPF.git
-version: '0.003'
+version: '0.004'
 x_authority: cpan:CHIM
