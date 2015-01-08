@@ -71,11 +71,11 @@
    "provides" : {
       "Validate::SPF" : {
          "file" : "lib/Validate/SPF.pm",
-         "version" : "0.004"
+         "version" : "0.005"
       },
       "Validate::SPF::Parser" : {
          "file" : "lib/Validate/SPF/Parser.pm",
-         "version" : "0.004"
+         "version" : "0.005"
       }
    },
    "release_status" : "stable",
@@ -90,7 +90,7 @@
          "web" : "https://github.com/Wu-Wu/Validate-SPF"
       }
    },
-   "version" : "0.004",
+   "version" : "0.005",
    "x_authority" : "cpan:CHIM"
 }
 

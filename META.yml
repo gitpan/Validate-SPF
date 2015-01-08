@@ -35,10 +35,10 @@ no_index:
 provides:
   Validate::SPF:
     file: lib/Validate/SPF.pm
-    version: '0.004'
+    version: '0.005'
   Validate::SPF::Parser:
     file: lib/Validate/SPF/Parser.pm
-    version: '0.004'
+    version: '0.005'
 requires:
   Exporter: '0'
   Regexp::Common: '2013031301'
@@ -49,5 +49,5 @@ resources:
   bugtracker: https://github.com/Wu-Wu/Validate-SPF/issues
   homepage: https://metacpan.org/release/Validate-SPF
   repository: https://github.com/Wu-Wu/Validate-SPF.git
-version: '0.004'
+version: '0.005'
 x_authority: cpan:CHIM

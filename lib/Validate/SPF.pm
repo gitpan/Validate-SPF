@@ -7,7 +7,7 @@ use warnings;
 use Exporter 'import';
 use Validate::SPF::Parser;
 
-our $VERSION = '0.004'; # VERSION
+our $VERSION = '0.005'; # VERSION
 our $AUTHORITY = 'cpan:CHIM'; # AUTHORITY
 
 our @EXPORT = ();
@@ -36,33 +36,6 @@ sub validate {
     return wantarray ? ( $is_valid, $error ) : $is_valid;
 }
 
-# a
-# a/<prefix-length>
-# a:<domain-name>
-# a:<domain-name>/<prefix-length>
-
-# mx
-# mx/<prefix-length>
-# mx:<domain-name>
-# mx:<domain-name>/<prefix-length>
-
-# ip4:<IPv4-address>
-# ip4:<IPv4-network>/<prefix-length>
-
-# ip6:<IPv6-address>
-# ip6:<IPv6-network>/<prefix-length>
-
-# ptr
-# ptr:<domain>
-
-# exists:<domain>
-
-# include:<domain>
-
-# redirect=<domain>
-
-# exp=<domain>
-
 
 1;
 
@@ -78,7 +51,7 @@ Validate::SPF - Validates SPF text string
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

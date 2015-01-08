@@ -1,5 +1,13 @@
 Revision history for Perl extension Validate::SPF.
 
+0.005   Thu Jan 8 16:36:31 2015 +0000
+
+    [ FEATURES ]
+    - basic support redirect, exp and unknown modifiers
+
+    [ TESTS ]
+    - added tests for modifiers
+
 0.004   Tue Jan 6 10:33:13 2015 +0000
 
     [ TESTS ]

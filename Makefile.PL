@@ -36,7 +36,7 @@ my %WriteMakefileArgs = (
     "Test::Spec" => 0,
     "YAML" => 0
   },
-  "VERSION" => "0.004",
+  "VERSION" => "0.005",
   "test" => {
     "TESTS" => "t/*.t t/parser/*.t"
   }

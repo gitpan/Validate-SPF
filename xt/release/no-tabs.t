@@ -20,6 +20,9 @@ my @files = (
     't/lib/data/mech-ip6.yaml',
     't/lib/data/mech-mx.yaml',
     't/lib/data/mech-ptr.yaml',
+    't/lib/data/mod-exp.yaml',
+    't/lib/data/mod-redirect.yaml',
+    't/lib/data/mod-unknown.yaml',
     't/lib/data/version.yaml',
     't/parser/mech-a.t',
     't/parser/mech-all.t',
@@ -29,6 +32,9 @@ my @files = (
     't/parser/mech-ip6.t',
     't/parser/mech-mx.t',
     't/parser/mech-ptr.t',
+    't/parser/mod-exp.t',
+    't/parser/mod-redirect.t',
+    't/parser/mod-unknown.t',
     't/parser/version.t'
 );
 
